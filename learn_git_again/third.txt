@@ -1,0 +1,110 @@
+summer@DESKTOP-VPOKO89:~$ mkdir learn_git_again
+summer@DESKTOP-VPOKO89:~$ cd learn_git_again
+summer@DESKTOP-VPOKO89:~/learn_git_again$ touch third.txt
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/summer/learn_git_again/.git/
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git add third.txt
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git commit -m "adding third txt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <summer@DESKTOP-VPOKO89.localdomain>) not allowed
+summer@DESKTOP-VPOKO89:~/learn_git_again$ run
+Command 'run' not found, did you mean:
+  command 'rn' from deb trn4 (4.0-test77-14)
+  command 'zrun' from deb moreutils (0.66-1)
+  command 'crun' from deb crun (0.17+dfsg-1.1)
+  command 'zun' from deb python3-zunclient (4.4.0-0ubuntu1)
+  command 'srun' from deb slurm-client (21.08.5-2ubuntu1)
+  command 'rup' from deb rstat-client (4.0.1-11)
+  command 'grun' from deb grun (0.9.3+git20200303-1)
+  command 'runc' from deb runc (1.1.4-0ubuntu1~22.04.1)
+  command 'runq' from deb exim4-daemon-heavy (4.95-4ubuntu2.2)
+  command 'runq' from deb exim4-daemon-light (4.95-4ubuntu2.2)
+  command 'runq' from deb sendmail-bin (8.15.2-22ubuntu3)
+Try: sudo apt install <deb name>
+summer@DESKTOP-VPOKO89:~/learn_git_again$ summer
+Command 'summer' not found, but can be installed with:
+sudo apt install chiark-utils-bin
+summer@DESKTOP-VPOKO89:~/learn_git_again$  git config --global user.name "summer"
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git log
+fatal: your current branch 'master' does not have any commits yet
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git log
+fatal: your current branch 'master' does not have any commits yet
+summer@DESKTOP-VPOKO89:~/learn_git_again$ touch fourth.txt
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git add fourth.txt
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git commit -m "adding fourth.txt"
+[master (root-commit) a99cd3f] adding fourth.txt
+ Committer: summer <summer@DESKTOP-VPOKO89.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+ create mode 100644 third.txt
+summer@DESKTOP-VPOKO89:~/learn_git_again$ rm third.txt
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git and third.txt
+git: 'and' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git add third.txt
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git commit -m "removing third.txt"
+[master 18fe159] removing third.txt
+ Committer: summer <summer@DESKTOP-VPOKO89.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git log
+commit 18fe159b4e9ce024f1362cac06719ebd5e778150 (HEAD -> master)
+Author: summer <summer@DESKTOP-VPOKO89.localdomain>
+Date:   Sun Jun 18 11:07:47 2023 -0500
+
+    removing third.txt
+
+commit a99cd3f972dae5e2b04f5fb5ce1992ae49169c2b
+Author: summer <summer@DESKTOP-VPOKO89.localdomain>
+Date:   Sun Jun 18 11:05:47 2023 -0500
+
+    adding fourth.txt
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git config--global core.pager "cat"
+git: 'config--global' is not a git command. See 'git --help'.
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git config --global --list
+user.name=summer

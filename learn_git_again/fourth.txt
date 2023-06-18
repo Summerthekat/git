@@ -1,0 +1,8 @@
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git checkout -b
+error: switch `b' requires a value
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git checkout
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git branch -d
+fatal: branch name required
+summer@DESKTOP-VPOKO89:~/learn_git_again$ git branch -D
+fatal: branch name required
+summer@DESKTOP-VPOKO89:~/learn_git_again$
